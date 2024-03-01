@@ -1,1 +1,25 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Encriptador y Desencriptador</h1>
+        <label for="mensajeOriginal">Dime lo que queieres encriptar:</label>
+        <input type="text" id="mensajeOriginal" size="50">
+        <button onclick="encriptar()">Encriptar</button>
+        <button onclick="desencriptar()">Desencriptar</button>
+        <br>
+        <label for="mensajeResultado">Resultado:</label>
+        <span id="mensajeResultado"></span>
+        <button onclick="copiarResultado()">Copiar resultado</button>
+    </div>
+    <div id="mostrarAlerta"></div>
+    <script src="app.js"></script>
+</body>
+</html>
